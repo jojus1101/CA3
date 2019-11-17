@@ -5,40 +5,47 @@
  */
 package entities;
 
-import java.io.Serializable;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 /**
  *
  * @author jojus1101
  */
 public class Person {
-
-    private String gender;
+    private int id;
+    private String email;
     private String firstName;
+    private String userName;
 
-    public Person( String gender, String firstName) {
-        this.gender = gender;
+    public Person(int id, String email, String firstName) {
+        this.id = id;
+        this.email = email;
         this.firstName = firstName;
     }
 
-    public String getGender() {
-        return gender;
+    public int getId() {
+        return id;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getfirstName() {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFirstName() {
         return firstName;
     }
 
-    public void setfirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+    
     
 
 }
